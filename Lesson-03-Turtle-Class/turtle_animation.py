@@ -1,0 +1,51 @@
+from turtle import Turtle
+from time import sleep
+hero = Turtle()
+hero.shape('classic')
+hero.turtlesize(1)
+hero.hideturtle()
+hero.penup()
+villain = Turtle()
+villain.hideturtle()
+villain.penup()
+villain.goto(400, 200)
+villain.shape('turtle')
+hero.goto(-250, 0)
+hero.showturtle()
+hero.speed(1)
+# begin walking forward
+hero.forward(100)
+sleep(1)
+# look around
+hero.left(75)
+hero.right(150)
+hero.left(75)
+sleep(1)
+# move forward again
+hero.forward(100)
+# look around
+hero.left(75)
+hero.right(150)
+hero.left(75)
+sleep(1)
+# move forward again
+hero.forward(100)
+# bring out villain
+villain.showturtle()
+villain.setheading(225)
+villain.forward(250)
+villain.turtlesize(2)
+villain.color('green')
+sleep(.2)
+villain.turtlesize(3)
+villain.color('purple')
+sleep(.2)
+villain.turtlesize(4)
+villain.color('red')
+sleep(.2)
+villain.turtlesize(5)
+
+hero.write('YIKES!')
+hero.left(180)
+hero.speed(1)
+hero.forward(500)
